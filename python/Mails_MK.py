@@ -123,7 +123,7 @@ username = 'srodriguez'
 password = 'Zmadgfv1'
 
 #pyodbc
-cnxn = pyodbc.connect('DRIVER={ODBC Driver 13 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
+cnxn = pyodbc.connect('DRIVER={ODBC Driver 11 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
 cursor = cnxn.cursor()
 
 cursor.execute(" truncate table CRM_Mails")
